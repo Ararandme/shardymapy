@@ -1,0 +1,10 @@
+﻿@model shardymapy.Dto.NaveDto
+
+@{
+  ViewData["Title"] = "Nave"; 
+}
+
+<div>
+      @await Html.PartialAsync("_NaveForm")
+      @await Html.PartialAsync("_NaveTable",Model.Naves)
+</div>

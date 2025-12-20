@@ -1,0 +1,109 @@
+﻿@model Sku
+
+
+<div class="container mt-5" th:fragment="forms_item_fragment" >
+
+    <div class="card shadow-sm">
+        <div class="card-header text-center bg-primary text-white">
+            <h3>Registro de Artículo</h3>
+        </div>
+
+        <div class="card-body">
+            <!-- One form wraps both tabs -->
+            <form asp-action="Create" method="post" id="itemForm">
+
+                <!-- Nav -->
+                <ul class="nav nav-tabs" id="itemTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="info-tab"
+                                data-bs-toggle="tab" data-bs-target="#info"
+                                type="button" role="tab" aria-controls="info" aria-selected="true">
+                            Información General
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="dim-tab"
+                                data-bs-toggle="tab" data-bs-target="#dim"
+                                type="button" role="tab" aria-controls="dim" aria-selected="false">
+                            Dimensiones
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content p-3 border border-top-0 rounded-bottom" id="itemTabsContent">
+
+                    <!-- TAB 1 -->
+                    <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
+
+                        <div class="mb-3">
+                            <label class="form-label" for="Descripcion">Descripción</label>
+                            <input id="Descripcion" type="text" asp-for="Descripcion" class="form-control" placeholder="Ingrese la descripción">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="Thumbnail">Thumbnail</label>
+                            <input id="Thumbnail" type="text" asp-for="Thumbnail" class="form-control" placeholder="URL de imagen">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="FechaIngreso">Fecha de Ingreso</label>
+                            <input id="FechaIngreso" type="date" asp-for="FechaIngreso" class="form-control">
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" asp-for="Estado" id="estadoCheck">
+                            <label class="form-check-label" for="estadoCheck">Bloqueado</label>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- TAB 2 -->
+                    <div class="tab-pane fade" id="dim" role="tabpanel" aria-labelledby="dim-tab">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <label class="form-label" for="Ancho">Ancho</label>
+                                <input id="SkuDataLogistica.Ancho" type="number" step="0.01" asp-for="SkuDataLogistica.Ancho" class="form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label" for="Largo">Largo</label>
+                                <input id="SkuDataLogistica.Largo" type="number" step="0.01" asp-for="SkuDataLogistica.Largo" class="form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label" for="SkuDataLogistica.Altura">Altura</label>
+                                <input id="Altura" type="number" step="0.01" asp-for="SkuDataLogistica.Altura" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row g-3 mt-3">
+                            <div class="col-md-4">
+                                <label class="form-label" for="SkuDataLogistica.Peso">Peso</label>
+                                <input id="Peso" type="number" step="0.01" asp-for="SkuDataLogistica.Peso" class="form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label" for="SkuDataLogistica.Tipo">Tipo</label>
+                                <input id="Tipo" type="text" asp-for="SkuDataLogistica.Tipo" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row g-3 mt-3">
+                            <div class="col-md-6">
+                                <label class="form-label" for="SkuDataLogistica.FechaIngreso">Fecha de Ingreso</label>
+                                <input id="FechaIngreso" type="date" asp-for="SkuDataLogistica.FechaIngreso" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="SkuDataLogistica.FechaActualizacion">Fecha de Actualización</label>
+                                <input id="-FechaActualizacion" type="date" asp-for="SkuDataLogistica.FechaActualizacion" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+
+<!--                 {Submit} -->
+                <div class="text-center mt-3">
+                    <button type="submit" class="btn btn-primary px-5">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>

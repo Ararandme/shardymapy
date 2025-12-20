@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Nave>
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Lista de alamacenes</h2>
+
+    <table class="table table-striped table-hover shadow-sm rounded">
+        <thead class="table-dark">
+        <tr>
+            <th>id</th>
+            <th>warehouse alias</th>
+            <th>nave alias</th>
+            <th>estado activo</th>
+            <th>lenghtX</th>
+            <th>widthY</th>
+            <th>heightZ</th>
+            <th>marginSizeLeftX</th>
+            <th>marginSizeRightX</th>
+            <th>marginSizeTopY</th>
+            <th>marginSizeBottonY</th>
+            <th>pasilloWidth</th>
+            <th>pasilloQuantity</th>
+            <th></th>
+        </tr>
+        </thead>
+
+        <tbody>
+        @foreach (var naves in Model)
+        {
+            <tr>
+                <td>@naves.Id</td>
+                <td>@naves.Warehouse?.WarehouseAlias</td>
+                <td>@naves.NaveAlias</td>
+                <td>@naves.Estado</td>
+                <td>@naves.NaveConfiguration?.Lenghtx</td>
+                <td>@naves.NaveConfiguration?.Widthy</td>
+                <td>@naves.NaveConfiguration?.Heightz</td>
+                <td>@naves.NaveConfiguration?.MarginSizeLeftx</td>
+                <td>@naves.NaveConfiguration?.MarginSizeRightx</td>
+                <td>@naves.NaveConfiguration?.MarginSizeTopy</td>
+                <td>@naves.NaveConfiguration?.MarginSizeBottony</td>
+                <td>@naves.NaveConfiguration?.PasilloWidth</td>
+                <td>@naves.NaveConfiguration?.PasilloQuantity</td>
+                <td>
+                    <a href="/Nave/NaveEdit/@naves.Id" class="btn btn-sm btn-primary">Editar</a>
+                    <a href="/Nave/delete/@naves.Id" class="btn btn-sm btn-danger">Eliminar</a>
+                </td>
+            </tr>  
+        }
+        
+        </tbody>
+    </table>
+</div>
+

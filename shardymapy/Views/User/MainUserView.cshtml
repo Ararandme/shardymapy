@@ -1,0 +1,12 @@
+﻿@model IEnumerable<User>
+
+
+@{
+   ViewData["Title"] = "user";
+}
+<body>
+
+@await Html.PartialAsync("_forms",new User())
+
+@await Html.PartialAsync("_UserTable")
+</body>
