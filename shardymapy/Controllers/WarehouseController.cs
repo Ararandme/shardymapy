@@ -15,12 +15,11 @@ public class WarehouseController : Controller
 
     }
 
-    public IActionResult WarehouseForm()
+    public async Task<IActionResult> MainWarehouseView()
     {
-        var warehouse = new Warehouse();
-    
+        var warehouses =  await _service.GetWarehouses();
         
-        return  View(warehouse);
+        return  View(warehouses);
     }
     
     [HttpPost]
@@ -28,7 +27,30 @@ public class WarehouseController : Controller
     {
      
         await _service.AddWarehouse(warehouse);
-        return RedirectToAction("WarehouseForm");
+        return RedirectToAction("MainWarehouseView");
     }
+    
+    
+    [HttpGet]
+    public async Task<IActionResult> WarehouseEdit(int id)
+    {
+        return View(await _service.GetWarehouseById(id));
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> WarehouseEdit([FromForm] Warehouse warehouse)
+    {
+        await _service.UpdateWarehouse(warehouse);
+        return RedirectToAction("MainWarehouseView");
+    }
+    
+    public  async Task<IActionResult> WarehouseDelete(int id)
+    {
+        await _service.DeleteWarehouseById(id);
+        return RedirectToAction("MainWarehouseView");
+    }
+    
+
+   
     
 }

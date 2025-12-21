@@ -1,0 +1,15 @@
+﻿@model shardymapy.Dto.MapDto
+@section Styles{
+    <link rel="stylesheet" href="~/css/map/MapCss.css">
+}
+@{
+    ViewData["Title"] = "map";
+    
+}
+
+
+
+<div>
+      @await Html.PartialAsync("_WarehouseList")
+      @await Html.PartialAsync("_Maplayout")
+</div>

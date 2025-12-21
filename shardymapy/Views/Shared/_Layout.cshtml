@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/shardymapy.styles.css" asp-append-version="true"/>
+    
+    @RenderSection("Styles",required:false)
+  
 </head>
 <body>
 <header>
@@ -31,10 +34,13 @@
                         <a class="nav-link text-dark" asp-area="" asp-controller="Item" asp-action="MainItemView">Item</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Warehouse" asp-action="WarehouseForm">Warehouse</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Warehouse" asp-action="MainWarehouseView">Warehouse</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Nave" asp-action="NaveDashboard">Nave</a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Map" asp-action="MainMapView">Mapa</a>
                     </li>
 
                     

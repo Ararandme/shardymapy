@@ -1,0 +1,66 @@
+﻿* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.warehouse-layout{
+    width: 100vw;
+    height: auto;
+    background-color: gray;
+    text-align: center;
+}
+.nave-layout{
+    background-color: goldenrod;
+    border: black 2px solid;
+    /*top right botton left*/
+    padding: 0 0 0 0;
+}
+
+.center-div{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.corridor{
+    height: 40px;
+}
+table{
+    margin-top: 10px;
+}
+tr{
+    height: 100%;
+    max-height: 50px;
+    background-color: green;
+}
+td{
+    width: 100px;
+    border: black 2px solid;
+
+}
+.shelf-beam {
+    width: 5px !important;
+    background-color: black !important;
+}
+.shelf-middle-gap{
+    height: 4px !important;
+    margin: 4px 0 0 4px;
+    border: purple 4px solid;
+    border-left: 0;
+    border-right: 0;
+    background-color: purple !important;
+
+
+}
+.shelf-hidden{
+    border: hidden;
+    color: goldenrod;
+    background-color: goldenrod;
+}
+p{
+    margin: 0;
+}

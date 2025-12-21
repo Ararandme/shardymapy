@@ -50,6 +50,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxfSXRlbVRhYmxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Map/MainMapView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFwXE1haW5NYXBWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Map/_MapLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFwXF9NYXBMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Map/_WarehouseList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFwXF9XYXJlaG91c2VMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Nave/NaveDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF2ZVxOYXZlRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -86,8 +98,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfVXNlclRhYmxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Warehouse/WarehouseForm.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FyZWhvdXNlXFdhcmVob3VzZUZvcm0uY3NodG1s
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Warehouse/MainWarehouseView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FyZWhvdXNlXE1haW5XYXJlaG91c2VWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Warehouse/WarehouseEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FyZWhvdXNlXFdhcmVob3VzZUVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Warehouse/_WarehouseForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FyZWhvdXNlXF9XYXJlaG91c2VGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Warehouse/_WarehouseTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FyZWhvdXNlXF9XYXJlaG91c2VUYWJsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/_ViewImports.cshtml]

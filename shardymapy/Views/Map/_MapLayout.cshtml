@@ -1,0 +1,99 @@
+﻿@model shardymapy.Dto.MapDto
+
+
+
+<div class="warehouse-layout center-div">
+    @foreach (var nave in Model.Naves)
+    {
+        <div>
+        <h1>@nave.Warehouse?.WarehouseAlias</h1>
+        <h2>@nave.NaveAlias</h2>
+        <!--/*top right botton left*/-->
+        <div class="nave-layout"
+             style="
+                 width:@(nave.NaveConfiguration?.Lenghtx)px;
+                 height:@(nave.NaveConfiguration?.Widthy)px;
+                 padding:@(nave.NaveConfiguration?.MarginSizeTopy)px
+                    @(nave.NaveConfiguration?.MarginSizeRightx)px
+                    @(nave.NaveConfiguration?.MarginSizeBottony)px
+                    @(nave.NaveConfiguration?.MarginSizeLeftx)px;">
+            
+
+            <div class="corridor"></div>
+            <div>
+                <p>anaquel 1</p>
+                <table class="center-div">
+                    <tr>
+                        <td class="ce">1</td>
+                        <td class="shelf-beam"></td>
+                        <td>2</td>
+                        <td class="shelf-beam"></td>
+                        <td>3</td>
+                    </tr>
+                    <tr class="shelf-middle-gap">
+                    </tr>
+                    <tr>
+                        <td class="shelf-hidden"> 4</td>
+                        <td class="shelf-beam"></td>
+                        <td>5</td>
+                        <td class="shelf-beam"></td>
+                        <td>6</td>
+                    </tr>
+                </table>
+                <p>anaquel 2</p>
+            </div>
+            <div class="corridor"></div>
+            <div>
+                <p>anaquel 3</p>
+                <table class="center-div">
+                    <tr>
+                        <td>1</td>
+                        <td class="shelf-beam"></td>
+                        <td>2</td>
+                        <td class="shelf-beam"></td>
+                        <td>3</td>
+                    </tr>
+                    <tr class="shelf-middle-gap">
+                    </tr>
+                    <tr>
+                        <td class="shelf-hidden">4</td>
+                        <td class="shelf-beam"></td>
+                        <td>5</td>
+                        <td class="shelf-beam"></td>
+                        <td>6</td>
+                    </tr>
+                </table>
+                <p>anaquel 4</p>
+            </div>
+            <div class="corridor"></div>
+            <div>
+                <p>anaquel 5</p>
+                <table class="center-div">
+                    <tr>
+                        <td>1</td>
+                        <td class="shelf-beam"></td>
+                        <td>2</td>
+                        <td class="shelf-beam"></td>
+                        <td>3</td>
+                    </tr>
+                    <tr class="shelf-middle-gap">
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="shelf-beam"></td>
+                        <td>5</td>
+                        <td class="shelf-beam"></td>
+                        <td>6</td>
+                    </tr>
+                </table>
+                <p>anaquel 6</p>
+            </div>
+            <div class="corridor"></div>
+
+
+        </div>
+    </div>
+    }
+    
+
+</div>

@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Warehouse>
+
+@{
+    ViewBag.Title = "Warehouse";
+    Layout = "_Layout";
+}
+
+<div>
+   @await Html.PartialAsync("_WarehouseForm",new Warehouse())
+   @await Html.PartialAsync("_WarehouseTable")
+</div>

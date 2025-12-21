@@ -49,4 +49,10 @@ public class NaveController : Controller
         
         return RedirectToAction("NaveDashboard");
     }
+    [HttpGet]
+    public async Task<IActionResult> NaveDelete(int id)
+    {
+        await _service.DeleteNaveByNaveId(id);
+        return RedirectToAction("NaveDashboard");
+    }
 }

@@ -1,7 +1,7 @@
 ﻿@model Warehouse
 
 @{
-    ViewData["Title"] = "warehouseForm";
+    ViewData["Title"] = "Edit";
 }
 
     <div class="container mt-5">
@@ -10,8 +10,10 @@
             <h3>Registrar Almacen</h3>
         </div>
         <div class="card-body">
-            <form asp-action="WarehouseForm" method="post">
+            <form asp-action="WarehouseEdit" method="post">
 
+                <input type="hidden" asp-for="Id">
+                <input type="hidden" asp-for="WarehouseConfiguration.Id">
                 <div class="mb-3">
                     <label class="form-label" for="WarehouseAlias">Nombre</label>
                     <input id="WarehouseAlias" type="text" asp-for="WarehouseAlias" class="form-control" maxlength="20" placeholder="Ingrese un nombre del alamcen" required>

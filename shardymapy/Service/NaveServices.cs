@@ -48,8 +48,19 @@ public class NaveServices
     {
         var dto = new NaveDto();
         dto.Nave = await _context.Naves.FindAsync((long) id);
+        dto.Nave?.NaveConfiguration = await _context.NaveConfigurations
+            .FirstOrDefaultAsync(n =>n.NaveId == id );
 
         return dto;
+    }
+
+    public async Task<IEnumerable<Nave>> GetNavesByWarehouseId(int id)
+    {
+        var naves = await _context.Naves
+            .Where(n => n.WarehouseId == id)
+            .Include(n => n.NaveConfiguration)
+            .ToListAsync();
+        return naves;
     }
 
     public async Task<bool> updateNaveByDto(NaveDto dto)
@@ -58,6 +69,19 @@ public class NaveServices
           nave?.Warehouse = await _context.Warehouses.FindAsync(nave.Warehouse?.Id);
           _context.Naves.Update(dto.Nave);
           return await _context.SaveChangesAsync() > 0;
+    }
+
+    public async Task<bool> DeleteNaveByNaveId(int id)
+    {
+        var config= await _context.NaveConfigurations.FirstOrDefaultAsync(n => 
+            n.NaveId == id);
+        if (config != null) _context.NaveConfigurations.Remove(config);
+
+        var nave  = await _context.Naves.FindAsync((long) id);
+        if (nave == null) return false;
+        
+        _context.Naves.Remove(nave);
+        return await _context.SaveChangesAsync() > 0;
     }
  
     

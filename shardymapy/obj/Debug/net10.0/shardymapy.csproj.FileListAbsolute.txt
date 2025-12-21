@@ -185,3 +185,5 @@ C:\Users\wtfro\RiderProjects\shardymapy\shardymapy\bin\Debug\net10.0\zh-Hans\Mic
 C:\Users\wtfro\RiderProjects\shardymapy\shardymapy\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\wtfro\RiderProjects\shardymapy\shardymapy\obj\Debug\net10.0\shardymapy.csproj.AssemblyReference.cache
 C:\Users\wtfro\RiderProjects\shardymapy\shardymapy\obj\Debug\net10.0\shardymapy.csproj.Up2Date
+C:\Users\wtfro\RiderProjects\shardymapy\shardymapy\obj\Debug\net10.0\shardymapy.sourcelink.json
+C:\Users\wtfro\RiderProjects\shardymapy\shardymapy\obj\Debug\net10.0\compressed\xjmue7r5e8-{0}-e4kq4ntf1l-e4kq4ntf1l.gz

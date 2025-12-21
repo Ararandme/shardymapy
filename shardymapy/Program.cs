@@ -15,6 +15,7 @@ builder.Services.AddDbContext<ArarContext>(options =>
         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("cn"))));
 builder.Services.AddScoped<WarehouseService>();
 builder.Services.AddScoped<NaveServices>();
+builder.Services.AddScoped<MapService>();
 
 var app = builder.Build();
 
