@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("shardymapy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e745fe2e07f607f39b5493f305015674dfbd45e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+896f958fd355f1a2450b9562b0784e1ff40be82d")]
 [assembly: System.Reflection.AssemblyProductAttribute("shardymapy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("shardymapy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

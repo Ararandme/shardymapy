@@ -49,14 +49,44 @@ public class WarehouseService
         return await _context.SaveChangesAsync() > 0;
     }
     
-    public async Task<bool> DeleteWarehouseById(int id){
-        var warehouseConfiguration = _context.WarehouseConfigurations
-            .FirstOrDefault(n => n.WarehouseId == id);
-        _context.WarehouseConfigurations.Remove(warehouseConfiguration);
+    public async Task<bool> DeleteWarehouseById(int id)
+    {
         
-        var warehouse =  await GetWarehouseById(id);
-        _context.Warehouses.Remove(warehouse);
-        return await _context.SaveChangesAsync() > 0;}
+        
+        var naveIds = await _context.Naves
+            .Where(n => n.WarehouseId == id)
+            .Select(n => n.Id)
+            .ToListAsync();
+        
+       
+        if (naveIds.Count > 0)
+        {
+            var naveConfigs = await _context.NaveConfigurations
+                .Where(c => naveIds.Contains(c.NaveId))
+                .ToListAsync();
+
+            _context.NaveConfigurations.RemoveRange(naveConfigs);
+
+            
+            var naves = await _context.Naves
+                .Where(n => n.WarehouseId == id)
+                .ToListAsync();
+
+            _context.Naves.RemoveRange(naves);
+        }
+
+        
+        
+        var config = await _context.WarehouseConfigurations
+            .FirstOrDefaultAsync(n => n.WarehouseId == id);
+        if (config != null) _context.WarehouseConfigurations.Remove(config);
+        
+        var warehouse =  await _context.Warehouses.FindAsync((long) id);
+        if (warehouse != null)  _context.Warehouses.Remove(warehouse);
+        
+        return await _context.SaveChangesAsync() > 0;
+        
+    }
     
-    
+
 }
