@@ -2,14 +2,15 @@
 using Microsoft.EntityFrameworkCore;
 using shardymapy.Data;
 using shardymapy.Models;
+using shardymapy.Models.User;
 
 namespace shardymapy.Controllers;
 
 public class UserController : Controller
 {
-    private readonly ArarContext _context;
+    private readonly MapyContext _context;
 
-    public UserController(ArarContext context)
+    public UserController(MapyContext context)
     {
         _context = context;
     } 

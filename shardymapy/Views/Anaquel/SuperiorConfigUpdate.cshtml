@@ -1,0 +1,44 @@
+﻿@model shardymapy.Models.Anaquel.AnaquelLineaVistaSuperiorConfiguracion
+
+<div class="container" th:fragment="configSuperiorForm">
+    <h4 class="mb-3">Anaquel - Vista Superior (Configuración)</h4>
+
+    <form class="row g-3" asp-action="SuperiorConfigUpdate"  method="post">
+
+        <input type="hidden" asp-for="Id">
+        <div class="col-md-4">
+            <label class="form-label">nombre de configuracion</label>
+            <input type="text" class="form-control"  asp-for="ConfigNombre">
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Column Separation Width</label>
+            <input type="number" step="0.01" class="form-control"  asp-for="ColumnSeparationWidth">
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Middle Padding Size</label>
+            <input type="number" step="0.01" class="form-control"  asp-for="MiddlePaddingSize">
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Anaquel Block Width X</label>
+            <input type="number" step="0.01" class="form-control"  asp-for="AnaquelBlockWidhtx">
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Anaquel Total Width X</label>
+            <input type="number" step="0.01" class="form-control"  asp-for="AnaquelTotalWidthx">
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Anaquel Block Height Y</label>
+            <input type="number" step="0.01" class="form-control"  asp-for="AnaquelBlockHeighty">
+        </div>
+
+        
+
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Guardar</button>
+        </div>
+    </form>
+</div>

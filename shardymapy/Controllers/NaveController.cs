@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using shardymapy.Dto;
-using shardymapy.Models;
+using shardymapy.Models.Naves;
 using shardymapy.Service;
 
 namespace shardymapy.Controllers;

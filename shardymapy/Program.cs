@@ -10,12 +10,16 @@ builder.Logging.AddConsole();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<ArarContext>(options => 
+builder.Services.AddDbContext<MapyContext>(options => 
     options.UseMySql(builder.Configuration.GetConnectionString("cn"),
         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("cn"))));
 builder.Services.AddScoped<WarehouseService>();
 builder.Services.AddScoped<NaveServices>();
 builder.Services.AddScoped<MapService>();
+builder.Services.AddScoped<AnaquelService>();
+
+
+
 
 var app = builder.Build();
 

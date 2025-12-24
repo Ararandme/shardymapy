@@ -1,0 +1,19 @@
+﻿@model IEnumerable<shardymapy.Models.Map.PrintCodeList>
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Code</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <strong>@item.PrintCode</strong>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

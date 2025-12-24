@@ -1,7 +1,4 @@
 ﻿@model IEnumerable<Sku>
-
-
-
 <div>
     @await Html.PartialAsync("_ItemForm", new Sku())
     @await Html.PartialAsync("_ItemTable", Model)

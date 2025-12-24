@@ -1,0 +1,24 @@
+﻿@model shardymapy.Dto.map.PrintDto?
+
+<div>
+    <form class="p-3 border rounded shadow-sm" asp-action="PrintMainView" method="get" >
+        <div class="mb-3">
+            <label for="colorSelect" class="form-label">Escoge una almacen</label>
+            <select  class="form-select" id="colorSelect"  name="warehouseId">
+                <option selected value="0">-- selecionar almacen --</option>
+                @if (Model != null)
+                {
+                    foreach (var warehouse in Model.Warehouses)
+                    {
+                        <option value="@warehouse.Id">
+                            @warehouse.WarehouseAlias
+                        </option>
+                    }
+                }
+     
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

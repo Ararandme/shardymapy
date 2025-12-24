@@ -1,0 +1,35 @@
+﻿@model AnaquelConfigDto
+
+@{
+    
+}
+
+<div>
+    <div class="row">
+        <div >
+            @await Html.PartialAsync("partial/_AnaquelFrontalConfigForm")
+        </div>
+        <div >
+            @await Html.PartialAsync("partial/_AnaquelFrontalConfigTable", Model.FrontalConfigurations)
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <div class="row">
+        <div c>
+            @await Html.PartialAsync("partial/_AnaquelSuperiorConfigForm")
+        </div>
+        <div >
+            @await Html.PartialAsync("partial/_AnaquelSuperiorConfigTable", Model.SuperiorConfigurations)
+        </div>
+    </div>
+
+  
+    <div>
+    </div>
+
+
+
+</div>

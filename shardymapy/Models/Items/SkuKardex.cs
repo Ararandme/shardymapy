@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace shardymapy.Models;
+namespace shardymapy.Models.Items;
 
 [Table("sku_kardex")]
 [Index("SkuId", Name = "FKtdtgex1c1dh4hsaw98yy7i1jp")]
@@ -25,9 +24,7 @@ public partial class SkuKardex
     [Key]
     [Column("id")]
     public int Id { get; set; }
-
-    [Column("sku_id")]
-    public long? SkuId { get; set; }
+    
 
     [Column("cantidad_salida")]
     [StringLength(255)]
@@ -41,7 +38,7 @@ public partial class SkuKardex
     [StringLength(255)]
     public string? HoraSalida { get; set; }
 
-    [ForeignKey("SkuId")]
-    [InverseProperty("SkuKardices")]
+    public long? SkuId { get; set; }
+    [ForeignKey(nameof(SkuId))]
     public virtual Sku? Sku { get; set; }
 }

@@ -1,0 +1,71 @@
+﻿@model shardymapy.Dto.map.MapListDto
+
+@if (Model is { WarehouseId:  not null })
+{
+    <form asp-controller="Map"
+          asp-action="MapListGeneratorSave"
+          method="post"
+          class="p-3 border rounded">
+
+        <input type="hidden" asp-for="WarehouseId" />
+
+        <div class="mb-3">
+            <h5 class="mb-0">Asignar configuraciones por Nave</h5>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-sm table-bordered align-middle">
+                <thead class="table-light">
+                <tr>
+                    <th style="width: 80px;">Usar</th>
+                    <th>Nave</th>
+                    <th>Config Superior</th>
+                    <th>Config Frontal</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                @for (int i = 0; i < Model.CheckLists.Count; i++)
+                {
+                    <tr>
+                        <!-- checkbox -->
+                        <td class="text-center">
+                            <input class="form-check-input"
+                                   asp-for="CheckLists[i].Selected" />
+                        </td>
+
+                        <!-- nave id -->
+                        <td>
+                            <input type="hidden" asp-for="CheckLists[i].NaveId" />
+                            <span>Nave ID: @Model.CheckLists[i].NaveId</span>
+                        </td>
+
+                        <!-- superior select -->
+                        <td>
+                            <select class="form-select form-select-sm"
+                                    asp-for="CheckLists[i].SuperiorConfigId"
+                                    asp-items="Model.SuperiorConfigs">
+                                <option value="0">-- seleccionar --</option>
+                            </select>
+                        </td>
+
+                        <!-- frontal select -->
+                        <td>
+                            <select class="form-select form-select-sm"
+                                    asp-for="CheckLists[i].FrontalConfigId"
+                                    asp-items="Model.FrontalConfigs">
+                                <option value="0">-- seleccionar --</option>
+                            </select>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+
+        <button type="submit" class="btn btn-success">
+            Guardar Asignación
+        </button>
+    </form>
+}
+

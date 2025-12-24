@@ -3,19 +3,21 @@ using Microsoft.EntityFrameworkCore;
 using shardymapy.Data;
 using shardymapy.Dto;
 using shardymapy.Models;
+using shardymapy.Models.Naves;
+using shardymapy.Models.Warehouse;
 
 namespace shardymapy.Service;
 
 public class NaveServices
 {
-    private readonly ArarContext _context ;
+    private readonly MapyContext _context ;
 
-    public NaveServices(ArarContext context)
+    public NaveServices(MapyContext context)
     {
         _context = context;
     }
     
-    public ArarContext ArarContext
+    public MapyContext MapyContext
     {
         get
         {
@@ -29,6 +31,8 @@ public class NaveServices
             n.NaveConfiguration).ToListAsync();
         return naves;
     }
+  
+
 
     public async Task<bool> AddnaveWithDto(NaveDto dto)
     {
@@ -54,7 +58,7 @@ public class NaveServices
         return dto;
     }
 
-    public async Task<IEnumerable<Nave>> GetNavesByWarehouseId(int id)
+    public async Task<IEnumerable<Nave>> GetNavesByWarehouseId(int? id)
     {
         var naves = await _context.Naves
             .Where(n => n.WarehouseId == id)

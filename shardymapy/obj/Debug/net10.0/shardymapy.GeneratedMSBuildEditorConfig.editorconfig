@@ -30,6 +30,34 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Anaquel/AnaquelConfigMainView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hcXVlbFxBbmFxdWVsQ29uZmlnTWFpblZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Anaquel/FrontalConfigUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hcXVlbFxGcm9udGFsQ29uZmlnVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Anaquel/partial/_AnaquelFrontalConfigForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hcXVlbFxwYXJ0aWFsXF9BbmFxdWVsRnJvbnRhbENvbmZpZ0Zvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Anaquel/partial/_AnaquelFrontalConfigTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hcXVlbFxwYXJ0aWFsXF9BbmFxdWVsRnJvbnRhbENvbmZpZ1RhYmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Anaquel/partial/_AnaquelSuperiorConfigForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hcXVlbFxwYXJ0aWFsXF9BbmFxdWVsU3VwZXJpb3JDb25maWdGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Anaquel/partial/_AnaquelSuperiorConfigTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hcXVlbFxwYXJ0aWFsXF9BbmFxdWVsU3VwZXJpb3JDb25maWdUYWJsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Anaquel/SuperiorConfigUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hcXVlbFxTdXBlcmlvckNvbmZpZ1VwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -54,12 +82,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFwXE1haW5NYXBWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Map/_MapLayout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFwXF9NYXBMYXlvdXQuY3NodG1s
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Map/MapListGeneratorForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFwXE1hcExpc3RHZW5lcmF0b3JGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Map/_WarehouseList.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFwXF9XYXJlaG91c2VMaXN0LmNzaHRtbA==
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Map/partial/_MapLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFwXHBhcnRpYWxcX01hcExheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Map/partial/_MapListGeneratorSetUpTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFwXHBhcnRpYWxcX01hcExpc3RHZW5lcmF0b3JTZXRVcFRhYmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Map/partial/_WarehouseList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFwXHBhcnRpYWxcX1dhcmVob3VzZUxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Map/partial/_WarehouseListSetUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFwXHBhcnRpYWxcX1dhcmVob3VzZUxpc3RTZXRVcC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Nave/NaveDashboard.cshtml]
@@ -76,6 +116,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Nave/_NaveTable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF2ZVxfTmF2ZVRhYmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Print/PrintMainView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpbnRcUHJpbnRNYWluVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Print/_PrintTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpbnRcX1ByaW50VGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Print/_WarehouseList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpbnRcX1dhcmVob3VzZUxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/wtfro/RiderProjects/shardymapy/shardymapy/Views/Shared/Error.cshtml]

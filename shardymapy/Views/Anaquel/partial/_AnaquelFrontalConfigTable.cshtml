@@ -1,0 +1,44 @@
+﻿@model IEnumerable<shardymapy.Models.Anaquel.AnaquelLineaVistaFrontalConfiguration>
+
+
+<div class="container" >
+    <table class="table table-sm table-bordered table-hover align-middle">
+       
+        <thead class="table-light">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Total Height Y</th>
+            <th>Total Width X</th>
+            <th>Block Height Y</th>
+            <th>Columns</th>
+            <th>Rows</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach(var c in Model)
+        {
+            <tr>
+                <td>@c.Id</td>
+                <td>@c.ConfigNombre</td>
+                <td>@c.TotalHeighty</td>
+                <td>@c.TotalWidthx</td>
+                <td>@c.BlockHeighty</td>
+                <td>@c.ColumnAmount</td>
+                <td>@c.RowAmount</td>
+                <td>
+                    <a href="/Anaquel/FrontalConfigUpdate/@c.Id" class="btn btn-sm btn-primary">Editar</a>
+                    <a href="/Anaquel/FrontalConfigDelete/@c.Id" class="btn btn-sm btn-danger">Eliminar</a>
+                </td>
+            </tr>        
+        }
+    
+        </tbody>
+    </table>
+    <h1>
+        
+        
+    </h1>
+</div>
+

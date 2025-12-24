@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace shardymapy.Models;
+namespace shardymapy.Models.Anaquel;
 
 [Table("anaquel_linea_celdas")]
-[Index("AnaquelId", Name = "FK2qeq8vffs4ri8u0xqgeqjia9a")]
-public partial class AnaquelLineaCelda
+public class AnaquelLineaCelda
 {
-    [Column("anaquel_id")]
-    public int? AnaquelId { get; set; }
-
     [Key]
     [Column("id")]
     public int Id { get; set; }
+
 
     [Column("x_position")]
     public double XPosition { get; set; }
@@ -23,7 +18,13 @@ public partial class AnaquelLineaCelda
     [Column("y_position")]
     public double YPosition { get; set; }
 
-    [ForeignKey("AnaquelId")]
+    [Column("anaquel_id")]
+    public int? AnaquelId { get; set; }
+
+    [ForeignKey(nameof(AnaquelId))]
     [InverseProperty("AnaquelLineaCelda")]
     public virtual Anaquel? Anaquel { get; set; }
+    
+    
+    public virtual List<AnaquelLineaCeldasSubdivision>? AnaquelLineaCeldasSubdivision { get; set; }
 }

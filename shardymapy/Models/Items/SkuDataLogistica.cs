@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
+using shardymapy.Models.Items;
 
-namespace shardymapy.Models;
+namespace shardymapy.Models.Items;
 
 [Table("sku_data_logistica")]
 [Index("SkuId", Name = "UKmx6ncuh5obw78y8v0bmwl4dr8", IsUnique = true)]

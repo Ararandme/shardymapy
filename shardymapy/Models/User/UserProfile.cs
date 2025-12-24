@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace shardymapy.Models;
+namespace shardymapy.Models.User;
 
 [Table("user_profile")]
 [Index("UserId", Name = "UKebc21hy5j7scdvcjt0jy6xxrv", IsUnique = true)]

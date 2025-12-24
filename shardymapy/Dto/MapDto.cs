@@ -1,4 +1,6 @@
 ﻿using shardymapy.Models;
+using shardymapy.Models.Naves;
+using shardymapy.Models.Warehouse;
 
 namespace shardymapy.Dto;
 

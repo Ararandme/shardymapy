@@ -1,0 +1,14 @@
+﻿@model shardymapy.Dto.map.PrintDto
+
+@{
+
+}
+
+<div>
+      @await Html.PartialAsync("_WarehouseList")
+      @if (Model.PrintDtos != null)
+      {
+            @await Html.PartialAsync("_PrintTable",Model.PrintDtos);
+      }
+      
+</div>

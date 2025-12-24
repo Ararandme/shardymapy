@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore;
+using shardymapy.Models.Anaquel;
 
-namespace shardymapy.Models;
+namespace shardymapy.Models.Items;
 
 [Table("sku")]
 public partial class Sku
@@ -32,7 +30,8 @@ public partial class Sku
 
     [InverseProperty("Sku")]
     public virtual SkuDataLogistica? SkuDataLogistica { get; set; }
+    
+    public IEnumerable<Sku>? Skus { get; set; }
 
-    [InverseProperty("Sku")]
-    public virtual ICollection<SkuKardex> SkuKardices { get; set; } = new List<SkuKardex>();
+   
 }

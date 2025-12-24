@@ -1,0 +1,50 @@
+﻿@model AnaquelConfigDto
+
+<div class="container" >
+    <h4 class="mb-3">Anaquel - Vista Frontal (Configuración)</h4>
+
+    <form class="row g-3" asp-action="FrontalConfigSave"  method="post">
+
+        <div class="col-md-4">
+            <label class="form-label">nombre de configuracion</label>
+            <input type="text" class="form-control"
+                   asp-for="FrontalConfiguration.ConfigNombre" />
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Total Height Y</label>
+            <input type="number" step="0.01" class="form-control"
+                   asp-for="FrontalConfiguration.TotalHeighty" />
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Total Width X</label>
+            <input type="number" step="0.01" class="form-control"
+                   asp-for="FrontalConfiguration.TotalWidthx" />
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Block Height Y</label>
+            <input type="number" step="0.01" class="form-control"
+                   asp-for="FrontalConfiguration.BlockHeighty" />
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Column Amount</label>
+            <input type="number" step="1" class="form-control"
+                   asp-for="FrontalConfiguration.ColumnAmount" />
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Row Amount</label>
+            <input type="number" step="1" class="form-control"
+                   asp-for="FrontalConfiguration.RowAmount" />
+        </div>
+
+        <!-- Anaquel list later: not shown -->
+
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Guardar</button>
+        </div>
+    </form>
+</div>
